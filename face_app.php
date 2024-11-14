@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h2>Peys App</h2>
 
     <form id="form" method="POST" action="">
-        <label for="txtVolume">Select Volume:</label>
+        <label for="txtVolume">Select Photo Size:</label>
         <input type="range" name="txtvolume" id="txtvolume" min="10" max="100" value="<?php echo isset($volume) ? $volume : 60; ?>" step="10"> <br>
 
-        <label for="clrTheme">Select a Color: </label>
+        <label for="clrTheme">Select Border Color: </label>
         <input type="color" name="clrTheme" id="clrTheme" value="<?php echo isset($color) ? $color : '#000000'; ?>"> <br>
 
         <button type="submit">Process</button> <br> <br> <br>
